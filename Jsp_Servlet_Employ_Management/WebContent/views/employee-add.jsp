@@ -12,7 +12,9 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <body>
+
 	<div class="container">
+	<a href="${pageContext.request.contextPath}/logout.jsp">Logout</a>
 	<h1>Employee Directory</h1>
 	<hr/>
 		<div class="row">

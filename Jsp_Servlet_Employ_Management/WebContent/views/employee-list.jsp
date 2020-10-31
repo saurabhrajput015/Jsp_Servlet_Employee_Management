@@ -16,7 +16,22 @@
 
 
 <body>
+<%
+      String email=(String)session.getAttribute("email");
+      if(email==null){
+    	  response.sendRedirect("index.jsp");
+      }
+
+%>
+
+
+
+
+
+
+
 	<div class="container">
+	<a href="${pageContext.request.contextPath}/logout.jsp">Logout</a>
 	<p>${message}</p>
 	<button class="btn btn-primary" onclick="window.location.href='views/employee-add.jsp'">Add Employee</button>
 	<table border="1" class="table table-striped table-bordered" id="datatable">
